@@ -140,3 +140,5 @@ fun link (t1 as Node (r1, x1, l1)) (t2 as Node(r2, x2, l2)) =
 What happens now is that during add operations, we always preserve the smallest
 element at the root of each binomial tree in the list with constant time
 additional work.
+
+_More details coming soon..._
