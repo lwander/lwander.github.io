@@ -69,7 +69,7 @@ rank r > 0 has r children, t_1, t_2, ..., t_r, such that each tree t_i has a
 rank of r - i. (The order kind-of matters here, as I will be referring to the
 subtrees as right-most and left-most). Perhaps a picture will help.
 
-{% highlight %}
+```
 Rank 0    Rank 1    Rank 2    Rank 3                                          
                                                                               
   .         .         .       --.                                             
@@ -80,7 +80,7 @@ Rank 0    Rank 1    Rank 2    Rank 3
                           |                                                   
                           .                                                   
 
-{% endhighlight %}
+```
 
 Now it should be a little easier to see the pattern described above. Now notice
 how for a binomial tree of rank r, it's largest subtree is of rank r - 1. This
