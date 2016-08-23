@@ -13,6 +13,7 @@ dl, dd, ol, ul, figure {
  */
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font-size: $base-font-size;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -21,6 +22,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2NsbW2VBAAE0AGquqBmlgAAAABJRU5ErkJggg==) repeat;
 }
 
 /**
@@ -112,7 +114,7 @@ pre,
 code {
     border: 1px solid $grey-color-light;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #eee;
 }
 
