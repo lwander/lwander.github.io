@@ -1,9 +1,18 @@
 ---
 layout: page
-title: about
+title: me
 permalink: /about/
 ---
 
-This is a blog by lwander.
+This is a blog by Lars Wander.
 
-Here I am on [github](https://github.com/lwander).
+  1. [github](https://github.com/lwander)
+  2. [soundcloud](https://soundcloud.com/la-w-nder)
+
+If you want to reach me:
+
+```
++[------->++<]>--.-----------.--[--->+<]>---.+.+[++>---<]>.[--->++<]>+++.-[->+++
+<]>-.+++++++++++++.----------.+.+++++++++++++.+[->+++++<]>+.--[--->+<]>---.+++++
++.------------.++++++++.+++.[-->+<]>--------.--[--->+<]>-.++++++++++++.--.
+```
