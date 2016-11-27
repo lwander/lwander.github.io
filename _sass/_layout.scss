@@ -154,10 +154,11 @@
     }
 
     h2 {
-        font-size: $big-font-size;
+        font-size: $medium-font-size;
+        font-style: italic;
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: $medium-font-size;
         }
     }
 
