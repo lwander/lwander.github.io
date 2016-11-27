@@ -51,15 +51,16 @@ fun deleteMin Empty = raise EMPTY
 fun deleteMin Heap (_, h) = h
 {% endhighlight %}
 
-The time bounds can greatly improved with _binomeal heaps_, which are really
-quite neat. A side by side comparison of the time bounds of each operation:
+The time bounds can greatly improved with _binomeal heaps_ (and later
+_fibonacci heaps_), which are really quite neat. A side by side comparison of 
+the amortized time bounds of each operation:
 
-|             | List   | Binomeal Heap |
-|-------------|-------:|--------------:|
-| `insert`    | `O(n)` |        `O(1)` |
-| `merge`     | `O(n)` |   `O(log(n))` |
-| `findMin`   | `O(1)` |        `O(1)` |
-| `deleteMin` | `O(1)` |   `O(log(n))` |
+|             | List       | Binomeal Heap     | Fibonacci Heap     |
+|-------------|-----------:|------------------:|-------------------:|
+| `insert`    | \\(O(n)\\) |        \\(O(1)\\) |          \\(O(1)\\)|
+| `merge`     | \\(O(n)\\) |   \\(O(log(n))\\) |          \\(O(1)\\)|
+| `findMin`   | \\(O(1)\\) |        \\(O(1)\\) |          \\(O(1)\\)|
+| `deleteMin` | \\(O(1)\\) |   \\(O(log(n))\\) |      \\(O(log(n)\\)|
 
 To understand how binomeal heaps work, we need to first examine _binomial
 trees_, which we will find are quite useful in this post and in a few to come.
@@ -125,7 +126,7 @@ fun add (t1::tl1) (t2::tl2) =
 
 So this is clearly all very neat, but as-is, quite useless. We just defined
 some of the operations needed to add non-negative integers, where each
-integer n takes up O(n) space. But, this becomes interesting once we redefine
+integer n takes up \\(O(n)\\) space. But, this becomes interesting once we redefine
 our Tree datatype and link function to be
 
 {% highlight sml %}
