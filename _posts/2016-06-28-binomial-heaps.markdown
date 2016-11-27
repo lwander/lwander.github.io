@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Binomial Heaps"
-date:   2016-06-28 12:18:01 -0400
+title: "Binomial Heaps"
+date: 2016-06-28 12:18:01 -0400
 categories: cs
 ---
 
@@ -66,9 +66,10 @@ To understand how binomeal heaps work, we need to first examine _binomial
 trees_, which we will find are quite useful in this post and in a few to come.
 To begin, binomial trees are categorized by their _rank_, a non-negative
 integer. A binomial tree of rank 0 is simpy a single node. A binomial tree of
-rank r > 0 has r children, t_1, t_2, ..., t_r, such that each tree t_i has a
-rank of r - i. (The order kind-of matters here, as I will be referring to the
-subtrees as right-most and left-most). Perhaps a picture will help.
+rank \\(r > 0\\) has \\(r\\) children, \\(t_1, t_2, ..., t_r\\), such that each 
+tree \\(t_i\\) has a rank of \\(r - i\\). (The order matters here, as I will 
+be referring to the subtrees as right-most and left-most). A picture is very 
+helpful here:
 
 ```
 Rank 0    Rank 1    Rank 2    Rank 3 
@@ -84,21 +85,22 @@ Rank 0    Rank 1    Rank 2    Rank 3
 ```
 
 Now it should be a little easier to see the pattern described above. Now notice
-how for a binomial tree of rank r, it's largest subtree is of rank r - 1. This
-is valuable, because if we are given two binomal trees of rank r, simply making
-the left-most child of one tree the other tree, we have a binomial tree of rank
-r + 1. Furthermore, notice how this implies that the number of nodes in a
-binomial tree of rank r is directly 2^r.
+how for a binomial tree of rank \\(r\\), it's largest subtree is of rank 
+\\(r - 1\\). This is valuable, because if we are given two binomal trees of 
+rank \\(r\\), simply making the left-most child of one tree the other tree, we 
+have a binomial tree of rank \\(r + 1\\). Furthermore, notice how this implies 
+that the number of nodes in a binomial tree of rank \\(r\\) is directly
+\\(2^r\\).
 
 With these two pieces of information, and a little creativity, we can encode
-bitstrings as lists of binomial trees, such that for a bitstring b, we can say
-that if bit i (b_i) is set, our list of binomial trees contains a tree with 
-rank i. It's easy to see that the total number of nodes will equal the number 
-the bitstring encodes. Furthermore, we can define addition on these lists of
-binomial trees in an efficient matter if we keep the lists sorted by increasing
-rank. We simply merge the two lists, and whenever we encounter two trees of
-equal rank, we link them, and carry the increased rank tree forward. Let's take
-a look at how this is implemented:
+bitstrings as lists of binomial trees, such that for a bitstring \\(b\\), we can say
+that if the \\(i^{th}\\) bit \\(b_i\\) is set, our list of binomial trees contains 
+a tree with rank \\(i\\). It's easy to see that the total number of nodes will 
+equal the number the bitstring encodes. Furthermore, we can define addition 
+on these lists of binomial trees in an efficient matter if we keep the lists 
+sorted by increasing rank. We simply merge the two lists, and whenever we 
+encounter two trees of equal rank, we link them, and carry the increased rank 
+tree forward. Let's take a look at how this is implemented:
 
 {% highlight sml %}
 (* The int is the rank, unit is a placeholder for later, and the list is the
