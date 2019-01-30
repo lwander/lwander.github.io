@@ -28,7 +28,7 @@ the idea of a pool noodle with touching ends, pause the animation a few frames
 after it's begun. What we have now is sort of like one of those water-tube-toys
 you could buy at the aquarium:
 
-<img src="http://www.bluemaize.net/im/toys/water-snake-toy-9.jpg"/>
+<img src="https://images-na.ssl-images-amazon.com/images/I/31kNjmC-WdL.jpg"/>
 
 The only difference being that instead of being filled with a green fluid, our
 macaroni is filled with empty space. And as the animation completes, the ends

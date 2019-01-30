@@ -2,17 +2,19 @@
  * Site header
  */
 .site-header {
+    background-color: $text-background
 }
 
 .site-title {
     line-height: 56px;
     margin-bottom: 0;
     float: left;
-    color: $text-color;
+    color: $title-color;
+    padding-left: $text-padding;
 
     &,
     &:visited {
-        color: black;
+        color: $title-color;
     }
 }
 
@@ -26,8 +28,13 @@
 
     .page-link {
         font-size: $base-font-size;
-        color: $text-color;
+        color: $title-color;
         line-height: $base-line-height;
+        padding-right: $text-padding;
+        &,
+        &:visited {
+            color: $title-color;
+        }
 
         // Gaps between nav items, but not on the last one
         &:not(:last-child) {
@@ -117,8 +124,10 @@
 }
 
 .post-list {
-    margin-left: 0;
+    margin: 0;
     list-style: none;
+    background-color: $text-background;
+    padding: $text-padding;
 }
 
 .post-group {
@@ -127,6 +136,7 @@
 
 .post-meta {
     color: $grey-color;
+    padding-right: $text-padding;
     float: right
 }
 
@@ -139,12 +149,17 @@
 
 .post-title {
     line-height: 1;
+    color: $title-color;
     font-size: $big-font-size;
+    padding: $text-padding;
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
+    background-color: $text-background;
+    padding: $text-padding;
     h1 {
+        color: $title-color;
         font-size: $big-font-size;
         font-weight: bold;
 
@@ -154,6 +169,7 @@
     }
 
     h2 {
+        color: $title-color;
         font-size: $medium-font-size;
         font-style: italic;
 
@@ -163,12 +179,14 @@
     }
 
     h3 {
+        color: $title-color;
         @include media-query($on-laptop) {
             font-size: 22px;
         }
     }
 
     h4 {
+        color: $title-color;
         @include media-query($on-laptop) {
             font-size: 18px;
         }

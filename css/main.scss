@@ -13,10 +13,13 @@ $big-font-size:    28px;
 $medium-font-size: $big-font-size * 0.8;
 
 $spacing-unit:     30px;
-
-$text-color:       #222;
-$background-color: #ffffff;
-$brand-color:      #2a7ae2;
+$text-padding:     14px;
+ 
+$text-color:        #000;
+$text-background:   #fff;
+$background-color:  #fff7f2;
+$brand-color:       #308aff;
+$title-color:       #aa3300;
 
 $grey-color:       #aaaaaa;
 $grey-color-light: lighten($grey-color, 60%);
