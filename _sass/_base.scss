@@ -22,6 +22,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    initial-letter: 1.5;
 }
 
 /**
@@ -74,20 +75,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
+h2 {
+    border-bottom: 1px solid grey
+}
+
 /**
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
+    color: lighten($text-color, 15%);
+    text-decoration: underline;
 
     &:visited {
-        color: darken($brand-color, 15%);
     }
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -111,10 +114,10 @@ blockquote {
  */
 pre,
 code {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $text-background;
     border-radius: 6px;
-    font-size: 14px;
-    background-color: $background-color;
+    font-size: $code-font-size;
+    background-color: $grey-color-light;
 }
 
 code {
@@ -179,4 +182,10 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+.color-box {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
 }

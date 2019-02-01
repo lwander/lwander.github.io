@@ -1,11 +1,18 @@
+<div style="display: inline; margin-left: 5px">
+  <div class="color-box" id="a"></div>
+  <div class="color-box" id="b"></div>
+  <div class="color-box" id="c"></div>
+  <script>
+    var s = Math.floor((new Date())/8.64e7);
+    document.getElementById("a").style.backgroundColor = (((s * 171) % 30269) % 2) === 0 ? "green" : "blue";
+    document.getElementById("b").style.backgroundColor = (((s * 172) % 30307) % 3) === 0 ? "green" : "blue";
+    document.getElementById("c").style.backgroundColor = (((s * 170) % 30323) % 5) === 0 ? "green" : "blue";
+  </script>
+</div>
 <header class="site-header">
-
   <div class="wrapper">
-
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
     <nav class="site-nav">
-
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title and my_page.title != "Not found" %}
@@ -14,7 +21,5 @@
         {% endfor %}
       </div>
     </nav>
-
   </div>
-
 </header>
