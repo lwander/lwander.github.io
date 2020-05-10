@@ -93,7 +93,7 @@ E2  | -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  C4 -
 ```
 
 Clearly a maj7b5 chord is difficult to play with that voicing, so you can cycle
-through inversions and drop voicings to find that's a little easier on the
+through inversions and drop voicings to find one that's a little easier on the
 fingers:
 
 ```
