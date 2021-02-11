@@ -75,8 +75,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
-h2 {
-    border-bottom: 1px solid grey
+h1, h2 {
+    padding-bottom: 2px;
+    border-bottom: 1px solid grey;
 }
 
 /**
@@ -98,11 +99,9 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $grey-color-dark;
+    border-left: 2px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    letter-spacing: -1px;
-    font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
@@ -117,7 +116,7 @@ code {
     border: 1px solid $text-background;
     border-radius: 6px;
     font-size: $code-font-size;
-    background-color: $grey-color-light;
+    background-color: $grey-color-very-light;
 }
 
 code {

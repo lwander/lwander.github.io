@@ -35,7 +35,7 @@ What makes them interesting is the combination of their uses (which we'll get
 to in a later post), and the big-O time bounds that can be achieved for each
 operation with a clever implementation.
 
-## List Heaps
+# List Heaps
 
 A quick-and-dirty mergeable heap, called a _list heap_, could be implemented
 as follows:
@@ -78,7 +78,7 @@ data structure is a bit heavy-handed in this case, since it permits arbitrary
 `delete` in constant time, when all we are interested in is `deleteMin`. So
 let's take a look at how else can start to improve these time bounds.
 
-## Binomeal Heaps
+# Binomeal Heaps
 
 The time bounds can improved with _binomeal heaps_ (and later
 _fibonacci heaps_), which are really neat. A side by side comparison of
@@ -223,7 +223,7 @@ Keep in mind that the branches of a binomial heap are a rank-reverse binomial
 heap, so that `merge` produces a valid binomial heap with a single element
 missing.
 
-## Fibonacci Heaps
+# Fibonacci Heaps
 
 You'll notice that the biggest cost in the _binomial heap_ implementation was
 the fact that for any merge or insertion we might have to do \\(O(log(n))\\) 

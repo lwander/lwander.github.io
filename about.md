@@ -12,12 +12,4 @@ This is a blog by Lars Wander.
 
 Thoughts/opinions are mine alone, not that of any employer.
 
-If you want to reach me:
-
-```
-+[------->++<]>--.-----------.--[--->+<]>---.+.+[++>---<]>.[--->++<]>+++.-[->+++
-<]>-.+++++++++++++.----------.+.+++++++++++++.+[->+++++<]>+.--[--->+<]>---.+++++
-+.------------.++++++++.+++.[-->+<]>--------.--[--->+<]>-.++++++++++++.--.
-```
-
-[source](https://github.com/lwander/lwander.github.io)
+> [page source](https://github.com/lwander/lwander.github.io)

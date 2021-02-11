@@ -4,9 +4,11 @@
   <div class="color-box" id="c"></div>
   <script>
     var s = Math.floor((new Date())/8.64e7);
-    document.getElementById("a").style.backgroundColor = (((s * 171) % 30269) % 2) === 0 ? "green" : "blue";
-    document.getElementById("b").style.backgroundColor = (((s * 172) % 30307) % 3) === 0 ? "green" : "blue";
-    document.getElementById("c").style.backgroundColor = (((s * 170) % 30323) % 5) === 0 ? "green" : "blue";
+    var c1 = "dodgerblue";
+    var c2 = "lightgreen";
+    document.getElementById("a").style.backgroundColor = (((s * 171) % 30269) % 2) === 0 ? c2 : c1;
+    document.getElementById("b").style.backgroundColor = (((s * 172) % 30307) % 3) === 0 ? c2 : c1;
+    document.getElementById("c").style.backgroundColor = (((s * 170) % 30323) % 5) === 0 ? c2 : c1;
   </script>
 </div>
 <header class="site-header">

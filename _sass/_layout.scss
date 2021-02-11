@@ -2,7 +2,8 @@
  * Site header
  */
 .site-header {
-    background-color: $text-background
+    background-color: $text-background;
+    margin-top: 1em;
 }
 
 .site-title {
@@ -134,23 +135,34 @@
     display: inline;
 }
 
+.post-list-meta {
+    color: $grey-color;
+    float: right;
+}
+
 .post-meta {
     color: $grey-color;
     padding-right: $text-padding;
-    float: right
+    font-size: $base-font-size * 0.9;
+    font-family: $base-font-family;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /**
  * Posts
  */
 .post-header {
+    font-family: $header-font-family;
     margin-bottom: $spacing-unit;
+    position: relative;
 }
 
 .post-title {
     line-height: 1;
     color: $title-color;
-    font-size: $big-font-size;
+    font-size: $header-font-size;
     padding: $text-padding;
 }
 
@@ -159,6 +171,7 @@
     background-color: $text-background;
     padding: $text-padding;
     h1 {
+        font-family: $header-font-family;
         color: $title-color;
         font-size: $big-font-size;
         font-weight: bold;
@@ -169,9 +182,9 @@
     }
 
     h2 {
+        font-family: $header-font-family;
         color: $title-color;
         font-size: $medium-font-size;
-        font-style: italic;
 
         @include media-query($on-laptop) {
             font-size: $medium-font-size;
@@ -203,4 +216,18 @@ table, th, td {
 
 html {
     overflow-y: scroll;
+}
+
+figure {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+    color: $grey-color-dark;
 }
