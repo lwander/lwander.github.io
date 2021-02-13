@@ -72,12 +72,13 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
+    padding-top: 5px;
     font-weight: $base-font-weight;
 }
 
 h1, h2 {
-    padding-bottom: 2px;
-    border-bottom: 1px solid grey;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $grey-color;
 }
 
 /**
@@ -100,7 +101,7 @@ a {
  */
 blockquote {
     color: $grey-color-dark;
-    border-left: 2px solid $grey-color-light;
+    border-left: 1px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
 
     > :last-child {

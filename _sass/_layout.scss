@@ -208,7 +208,7 @@
 
 table {
     border-spacing: 15px;
-} 
+}
 
 table, th, td {
     padding: 5px;
@@ -230,4 +230,43 @@ figcaption {
     text-align: center;
     font-style: italic;
     color: $grey-color-dark;
+}
+
+/**
+ * Initialiazing a `footnotes` counter on the wrapper
+ */
+article {
+  counter-reset: footnotes;
+}
+
+a[aria-describedby="footnote-label"] {
+  counter-increment: footnotes;
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+  outline: none;
+}
+
+a[aria-describedby="footnote-label"]::after {
+  content: counter(footnotes);
+  font-size: 0.5em;
+  margin-left: 2px;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a[aria-describedby="footnote-label"]:focus::after {
+  outline: thin dotted;
+  outline-offset: 2px;
+}
+
+footer :target {
+  background: pink;
+}
+
+footer {
+  border-top: 1px solid $grey-color-light;
+  padding-top: 10px;
+  padding-left: 10px;
 }
