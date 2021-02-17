@@ -12,7 +12,7 @@ lifting the pen can break... but the most nailbiting is watching the plotter
 repeatedly cover the same spot in ink until the page tears!
 
 <figure>
-  <img src="/assets/images/heatmaps/failed-plot.jpg">
+  <img src="/assets/images/heatmaps/failed-plot.jpg" alt="Plot with torn paper">
   <figcaption>Circled in red you can see where the paper tore while plotting
   this pattern. Bits of ink-laden paper trail the pen's path leaving the tear;
   the result is an ugly plot!</figcaption>
@@ -24,7 +24,7 @@ href="rendered-preview">rendered preview</a> for the above plot shows a lot of
 closely-drawn lines, but only one spot on the page actually winds up tearing:
 
 <figure>
-  <img src="/assets/images/heatmaps/source-plot.jpg">
+  <img src="/assets/images/heatmaps/source-plot.jpg" alt="Rendered plot showing where paper tore">
   <figcaption>Circled in red is the spot that winds up tearing. But why only
   this spot? There are many places on the page that are completely
   black from the many lines that are rendered, but they don't tear.</figcaption>
@@ -51,7 +51,7 @@ then record the squares each line segment covers.
 See an example for a single line segment:
 
 <figure>
-  <img src="/assets/images/heatmaps/bresenham.svg">
+  <img src="/assets/images/heatmaps/bresenham.svg" alt="Bresenham line drawing algorithm visualized">
   <figcaption>Depicted: <a
     href="https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm">Bresenham's
     line drawing algorithm</a>. Image credit:
@@ -76,7 +76,7 @@ Rendering the same plot from above using this approach shows us exactly where
 the plot tore!
 
 <figure>
-  <img src="/assets/images/heatmaps/source-heatmap.jpg">
+  <img src="/assets/images/heatmaps/source-heatmap.jpg" alt="Heatmap showing point where paper will tear">
   <figcaption>The color scale goes from blue (no lines) to red (most lines).
   In this case, red corresponds to 74 lines in a single 1x1mm square (see legend
   in the bottom left). Notice it lines up exactly with where the plot tore!
