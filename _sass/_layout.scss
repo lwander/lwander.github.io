@@ -83,12 +83,18 @@
     padding: $text-padding;
 }
 
-.post-group {
-    display: inline;
+@media only screen and (max-width: 600px) {
+	.post-link {
+		padding-bottom: 21px;
+	}
+
+	.post-group {
+		margin-bottom: 12px;
+	}
 }
 
 .post-list-meta {
-    color: $grey-color;
+    color: $grey-color-dark;
     float: right;
 }
 
