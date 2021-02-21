@@ -31,6 +31,8 @@ You can find me around the web:
     1](https://humans-of-the-moon.webflow.io/episode/ep-1-lars-wander),
     [Spotify](https://open.spotify.com/show/0ZAUVAx1By8rFkZnrwM1UM)
 * [Spinnaker, Kubernetes & Istio](https://www.youtube.com/watch?v=_ZCtiD_6p7g)
+* [Computer Vision for Road
+    Inspection](https://ieeexplore.ieee.org/document/6836111), [pdf](https://www.ri.cmu.edu/pub_files/2014/3/crack_detection_final.pdf)
 
 Thoughts/opinions are mine alone, not that of any employer.
 
