@@ -114,6 +114,35 @@ I encourage you to try something similar!):
   it's written on the back.
 * It's oddly satisfying to see all of these annotated pieces in one place!
 
+## Addendum: generating the annotations
+
+> __Note__: This is fairly [Axidraw](https://www.axidraw.com/) specific, but
+> applies to any plotter that can plot SVG files. In fact, using the path
+> representation mentioned below in conjunction with Python
+> [`svgpathtools`](https://pypi.org/project/svgpathtools/1.2.4/) should allow
+> this to work with any plotter that can take Cartesian commands.
+
+I generate these annotations by simply generating an SVG of the form:
+
+```
+<svg width="20.0cm" height="20.0cm" xmlns="http://www.w3.org/2000/svg">  
+  <text x="0.5" y="0.5" font-family="Monospace" font-size="0.35">
+    # pribbons/sunburst (2021-01-16 20:00:58)
+  </text>
+  ...
+</svg>
+```
+
+Next, I convert it to a <a aria-describedby="footnote-label"
+href="path-repr">path representation</a> with
+[Inkscape](https://inkscape.org/):
+
+```
+inkscape --actions="EditSelectAll;ObjectToPath;FileSave;FileClose" $FILENAME -g
+```
+
+And run the plotter on the result.
+
 <footer>
   <ol>
     <li id="parameters"> Passing <a
@@ -123,5 +152,9 @@ I encourage you to try something similar!):
     <li id="stats"> Note that the use of the git hash (line 11) isn't
     perfect, as local changes to the current commit might be included.
 	</li>
+    <li id="path-repr">Axidraw only works on paths, you can find Inkscape docs
+    on how to transform text to a set of paths <a
+    href="https://fedoramagazine.org/inkscape-creating-and-editing-paths/#:~:text=Converting%20objects%20to%20paths,choose%20Path%20%3E%20Object%20to%20Path.">here</a>.
+    </li>
   </ol>
 </footer>
