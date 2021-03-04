@@ -207,8 +207,8 @@ a[aria-describedby="footnote-label"] {
 }
 
 a[aria-describedby="footnote-label"]::after {
-  content: counter(footnotes);
-  font-size: 0.5em;
+  content: "[" counter(footnotes) "]";
+  font-size: 0.65em;
   margin-left: 2px;
   color: black;
   text-decoration: underline;
@@ -228,7 +228,7 @@ footer {
   border-top: 1px solid $grey-color-light;
   margin-top: 50px;
   padding-top: 10px;
-  padding-left: 10px;
+  font-size: $small-font-size;
 }
 
 .skip-link {

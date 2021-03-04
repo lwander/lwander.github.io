@@ -85,10 +85,11 @@ h1 {
  * Links
  */
 a {
-    color: lighten($text-color, 15%);
+    color: darkblue;
     text-decoration: underline;
 
     &:visited {
+        color: purple;
     }
 
     &:hover {
@@ -118,10 +119,6 @@ code {
     border-radius: 6px;
     font-size: $code-font-size;
     background-color: $grey-color-very-light;
-}
-
-code {
-    padding: 1px 5px;
 }
 
 pre {
